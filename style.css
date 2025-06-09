@@ -1,0 +1,392 @@
+:root, :root[data-theme=light] {
+    color-scheme: light;
+    --theme-bg: 9deg 0% 98%;
+    --theme-link: 172deg 18% 41%;
+    --theme-text: 203deg 11% 15%;
+    --theme-accent: 351deg 66% 48%;
+    --theme-accent-2: 0deg 0% 7%;
+    --theme-quote: 351deg 66% 48%;
+}
+body {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    min-height: 100vh;
+    max-width: 48rem;
+    flex-direction: column;
+    --tw-bg-opacity: 1;
+    background-color: hsl(var(--theme-bg) / var(--tw-bg-opacity));
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 4rem;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    font-weight: 400;
+    color: hsl(var(--theme-text) / 1);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 24px;
+    /* border-bottom: 1px solid #ddd; */
+    /* background-color: white; */
+}
+
+.left-section {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+.avatar {
+    width: 32px;
+    height: 32px;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/45/Pixel_avatar_placeholder.png'); /* Replace with your avatar */
+    background-size: cover;
+    background-position: center;
+}
+.avatar i{
+    font-size: 30px;
+}
+
+.brand {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    font-size: 14px;
+}
+
+
+.nav-links a {
+    color: #d33;
+    text-decoration: none;
+    position: relative;
+    padding: 0 1px;
+}
+.nav-links a:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: -8px;
+    top: 25%;
+    bottom: 25%;
+    width: 1px;
+    border-left: 1px dotted #d33;
+}
+
+.right-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  font-size: 25px;
+  color: #111;
+}
+
+.icon-button:hover {
+  color: rgb(219, 219, 219); /* Optional hover effect */
+}
+
+/* Section */
+.container .content {
+    padding: 1rem 0rem;
+}
+
+.socials {
+  display: flex;
+  justify-content: left;
+  gap: 20px;
+}
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.social-links a {
+  color: #0c0c0c;
+  transition: color 0.5s;
+  font-size: 1.5em;
+}
+
+.social-links a:hover {
+    color: #747474;
+}
+.big-links a {
+  color: #0c0c0c;
+  font-size: 2.0em;
+  transition: color 0.5s;
+  margin-left: 2rem;
+  padding:0px
+}
+
+.section {
+  padding: 5px 20px;
+  max-width: 900px;
+  margin: auto;
+  /* background-color: #fefefe; */
+}
+/* Skills */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.skill-category {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skill-category h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.skill-category ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skill-category li {
+  padding: 5px 0;
+  font-size: 0.95em;
+}
+
+/* Show when "locked open" */
+.show {
+  display: block;
+}
+/* Experience */
+
+
+.section h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 40px;
+}
+
+.div-card {
+  margin-bottom: 30px;
+  padding: 20px;
+  border-left: 4px solid #c9c9c9;
+  background-color: #fafafa;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.experience-header h3 {
+  margin: 0;
+  font-size: 1.3em;
+}
+
+.years {
+  font-size: 0.95em;
+}
+
+.experience-item h4 {
+  font-weight: normal;
+  font-size: 1.1em;
+  color: #4b9cd3;
+  margin: 5px 0 10px;
+}
+
+.responsibilities {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.responsibilities li {
+  margin-bottom: 8px;
+  font-size: 0.95em;
+}
+
+
+
+/* Temp */
+
+.border {
+  border:1px solid black;
+}
+.patent-title {
+  background: none;
+  border: none;
+  color: #0077cc;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0;
+  text-decoration: none;
+  margin: 0px;
+}
+.patent-title .icon{
+    padding-left: 1rem;
+}
+
+.patent-title:hover {
+  color: #004a99;
+  text-decoration: none;
+}
+/* Modal styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+  background-color: white;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.close {
+  position: absolute;
+  top: 10px; right: 15px;
+  font-size: 24px;
+  /* color: #888; */
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #000;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+/* ------------------------------------------------------------------- */
+.projects-section {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.projects-section h2 {
+  text-align: center;
+  font-size: 2.2em;
+  margin-bottom: 40px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.project-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  border-left: 4px solid #c9c9c9;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.project-card h3 {
+    margin-top: 0;
+    font-size: 1.3em;
+}
+
+.project-card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #0077cc;
+    text-decoration: none;
+}
+
+.hover-card{
+    transition: transform 0.5s ease;
+}
+.hover-card a:hover {
+  text-decoration: underline;
+}
+
+.hover-card:hover {
+  transform: translateY(-1rem);
+}
+
+.connect-section{
+    margin-bottom: 2rem;
+}
+
+
+/* Dark Mode */
+#theme-icon {
+  transition: transform 0.5s ease;
+}
+body.dark-mode {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+/* Example tweak for nav or other elements */
+body.dark-mode .navbar {
+  background-color: #252525;
+}
+body.dark-mode .section {
+  background-color: #121212;
+}
+body.dark-mode i {
+  color: #e7e7e7;
+}
+body.dark-mode i:hover {
+  color: #4d4d4d;
+}
+
+body.dark-mode .skill-category,
+body.dark-mode .experience-item,
+body.dark-mode .project-card
+{
+  background-color: #000000;
+  color: #f1f1f1;
+}
+
+body.dark-mode .modal-content{
+    color: #dadada;
+    background-color: #000000;
+}
+
+
+
+
+
+
+
+
+
+

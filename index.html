@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <!-- Nav Bar -->
+    <div class="navbar">
+    <div class="left-section">
+      <div class="avatar">
+        <i class="fa-solid fa-radiation" ></i>
+      </div>
+      <div class="names">
+        <span><strong>Pankaj Deb Roy</strong></span>
+        <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#contact">Contact</a>
+        <a href="https://medium.com/@yota.aiml">Posts</a>
+        </div>
+      </div>
+    </div>
+    <div class="right-section">
+      <!-- <i class="fas fa-search"></i> -->
+        <button class="icon-button" id="toggle-theme">
+            <i class="fas fa-sun" id="theme-icon"></i>
+        </button>
+      <!-- <i class="fas fa-bars"></i> -->
+    </div>
+    </div>
+
+    <div class="container">
+        <!-- Profile Summary -->
+        <div class="content profile-summary">
+            <h1>Pankaj Deb Roy ~ GenAI Engineer</h1>
+            <p>
+                Hello! I'm Pankaj, a Machine Learning Engineer currently specialising in <strong>Natural Language Processing(NLP) </strong> specially on <strong>Large Language Models (LLMs)</strong>.
+                My interest lies in <strong> Efficient Fine-tuning / Training LLMs on large context size</strong>. 
+            </p>
+            <p>
+            I am currently working with <strong>Samsung R&D Institute</strong> in Bangalore.
+            I am currently working on <strong>Training LLM Reward Models</strong> for <strong>Response Classification</strong> with large context length.
+            </p>
+        </div>
+
+        <div class="content socials section">
+            <strong>Follow me on : </strong> 
+            <div class="social-links">
+                <a href="https://github.com/yotaAI" target="_blank" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/pankaj-deb-roy-008575179/" target="_blank" aria-label="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://medium.com/@yota.aiml" target="_blank" aria-label="LinkedIn">
+                <i class="fab fa-medium"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="content">
+
+            <!-- Paper and Patent -->
+            <section class="patents-section section">
+                <h2>Paper & Patent</h2>
+
+                <div class="patent-card">
+                    <button class="patent-title" onclick="openModal('modal1')">
+                        WI-202504-022-1-INO
+                        <span class="icon">ⓘ</span>
+                    </button>
+                    <p class="patent-desc">
+                    <strong>Type:</strong> Patent<br>
+                    <strong>Grade:</strong> A1
+                    </p>
+                </div>
+            </section>
+            <!-- Skills -->
+            <section class="skills-section section">
+                <h2>Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category hover-card">
+                        <h3>Languages</h3>
+                        <ul>
+                            <li>Python</li>
+                            <li>C++</li>
+                            <li>SQL</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category hover-card">
+                        <h3>Machine Learning</h3>
+                        <ul>
+                            <li>Scikit-learn</li>
+                            <li>TensorFlow / Keras</li>
+                            <li>PyTorch</li>
+                            <li>Torch-Lightning</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="skill-category hover-card">
+                        <h3>Generative AI (GenAI) </h3>
+                        <ul>
+                            <li>Natural Language Processing</li>
+                            <li>Transformers</li>
+                            <li>LLMs (T5, LLaMA, GPT, Bart, Mamba)</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category hover-card">
+                        <h3>Optimization Techniques</h3>
+                        <ul>
+                            <li>Quantization</li>
+                            <li>Pruning</li>
+                            <li>Knowledge Distillation</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category hover-card">
+                        <h3>Tools & Platforms</h3>
+                        <ul>
+                            <li>Git & GitHub</li>
+                            <li>Docker</li>
+                            <li>Linux</li>
+                            <li>Jira</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- Experience -->
+            <section class="experience-section section">
+                <h2>Experience</h2>
+
+                <div class="experience-item div-card hover-card">
+                    <div class="experience-header">
+                    <h3>Samsung Research Institute</h3>
+                    <span class="years">2022 – Present</span>
+                    </div>
+                    <h4>Senior Engineer</h4>
+                    <ul class="responsibilities">
+                    <li>Developed Text Summarization model using T5 Base, achieving 98% BLEU scores compared to the baseline model on Article Summarization. Implemented model deployed on S25 device reducing inference time by 60%.</li>
+                    <li>Implemented parameter-efficient fine-tuning (PEFT) techniques, LoRA,QLoRA, to adapt a pre-trained LLAMA:2B model for samsung specific health use-case and next line prediction use-case for samsung keyboard, achieving a 96% accuracy rate.</li>
+                    <li>Automated Human Annotation of Code Dataset by generating Reward Model with LLMs. Which improves data-labelling by 90%.</li>
+                    <li>Fine-tuned Llama 3B model on a proprietary dataset of 150,000 samsung specific transcripts to create a specialised chatbot. Resulted in a 20% increase in user satisfaction scores.</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item div-card hover-card">
+                    <div class="experience-header">
+                    <h3>TATA Consultancy Services</h3>
+                    <span class="years">2021 – 2022</span>
+                    </div>
+                    <h4>Assistant System Engineer Trainee</h4>
+                    <ul class="responsibilities">
+                    <li>Worked as a Manual Tester on enterprise-scale applications.</li>
+                    </ul>
+                </div>
+            </section>
+            <!-- Project Section -->
+            <section class="projects-section section">
+                <h2>Projects</h2>
+        
+                <div class="projects-grid">
+        
+                    <div class="project-card hover-card">
+                    <h3>Paper Implementation</h3>
+                    <p>Implemented Computer Vision models from papers.</p>
+                    <p><strong>Models:</strong> GoogleNet, ResNet, VGGNet</p>
+                    <p><strong>Skills:</strong> Pytorch, ML,Deep Learning, Neural Network, Convolutional Neural Network</p>
+                    <a href="https://github.com/yotaAI/ConvNets" target="_blank">GitHub ↗</a>
+                    </div>        
+                </div>
+            </section>
+        </div>
+
+        <div class="connect-section" id="contact">
+            <h2>Just to say hi!</h2>
+
+            <div class="social-links big-links">
+                <a href="mailto:yota.aiml@gmail.com" aria-label="Email">
+                <i class="fas fa-envelope"></i>
+                </a>
+                <a href="tel:+918967405776" aria-label="Phone">
+                <i class="fas fa-phone-alt"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Paper Patent Modal -->
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal1')">&times;</span>
+                <h3>WI-202504-022-1-INO</h3>
+                <p><strong>Type:</strong> Patent<br>
+                    <strong>Grade:</strong> A1<br>
+                    <strong>HQ Grade Date:</strong>09-May-2025
+                </p>
+                <p><strong>Title:</strong> A method for unlocking One-For-All Large Language Models on Edge.</p>
+                <p><strong>Claim :</strong> A method for dinamically adaptiing and executing task-specific operations on a large language model (LLM) using low-rank adapters(LoRAs) on a electronic device, comprising: receiving an input from a user fro performing a task using the LLM model on the device; dynamically fetching the corresponding LoRA weights from the device menmory for performing the task; loading the LLM model from the device memoryto perform the task; providing the fetcheed LoRA weights and the received input as an input to the LLM model; executing the LLM model with the provided input to perform the task.</p>
+            </div>
+        </div>
+
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
