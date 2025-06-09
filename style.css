@@ -6,6 +6,10 @@
     --theme-accent: 351deg 66% 48%;
     --theme-accent-2: 0deg 0% 7%;
     --theme-quote: 351deg 66% 48%;
+    --light-border-left : 4px solid #c9c9c9;
+    --dark-background: #252525;
+    --dark-border-left: 4px solid #3a3a3a;
+    
 }
 body {
     margin-left: auto;
@@ -26,7 +30,14 @@ body {
     color: hsl(var(--theme-text) / 1);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    transition: background-color 0.5s ease, color 0.5s ease;
+    transition: background-color 0.2s ease, color 0.1s ease;
+}
+.symmetry {
+  line-height: 1.7;
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 0px 1rem;
+  text-align: justify;
 }
 
 .navbar {
@@ -34,8 +45,6 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 12px 24px;
-    /* border-bottom: 1px solid #ddd; */
-    /* background-color: white; */
 }
 
 .left-section {
@@ -106,6 +115,7 @@ body {
 /* Section */
 .container .content {
     padding: 1rem 0rem;
+    line-height: 1.5rem;
 }
 
 .socials {
@@ -139,7 +149,6 @@ body {
   padding: 5px 20px;
   max-width: 900px;
   margin: auto;
-  /* background-color: #fefefe; */
 }
 /* Skills */
 .skills-grid {
@@ -188,8 +197,7 @@ body {
 .div-card {
   margin-bottom: 30px;
   padding: 20px;
-  border-left: 4px solid #c9c9c9;
-  background-color: #fafafa;
+  border-left: var(--light-border-left);
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
@@ -292,7 +300,6 @@ body {
 /* ------------------------------------------------------------------- */
 .projects-section {
   padding: 60px 20px;
-  background-color: #f9f9f9;
   max-width: 1000px;
   margin: auto;
 }
@@ -310,10 +317,8 @@ body {
 }
 
 .project-card {
-  background-color: white;
   padding: 20px;
   border-radius: 10px;
-  border-left: 4px solid #c9c9c9;
   box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
@@ -350,17 +355,17 @@ body {
   transition: transform 0.5s ease;
 }
 body.dark-mode {
-  background-color: #121212;
+  background-color: var(--dark-background);
   color: #f1f1f1;
 }
+body.dark-mode .nav-links a{
+  color: #7aff59;
+}
 
+body.dark-mode .avatar i{
+  color: #7aff59;
+}
 /* Example tweak for nav or other elements */
-body.dark-mode .navbar {
-  background-color: #252525;
-}
-body.dark-mode .section {
-  background-color: #121212;
-}
 body.dark-mode i {
   color: #e7e7e7;
 }
@@ -372,21 +377,19 @@ body.dark-mode .skill-category,
 body.dark-mode .experience-item,
 body.dark-mode .project-card
 {
-  background-color: #000000;
+  background-color: var(--dark-background);
   color: #f1f1f1;
 }
 
 body.dark-mode .modal-content{
     color: #dadada;
-    background-color: #000000;
+    background-color: var(--dark-background);
+}
+
+body.dark-mode .div-card{
+    border-left: var(--dark-border-left);
 }
 
 
 
-
-
-
-
-
-
-
+/* ------------------------- */
