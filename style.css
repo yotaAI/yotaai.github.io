@@ -349,6 +349,30 @@ body {
     margin-bottom: 2rem;
 }
 
+#goTopBtn {
+    display: none; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px; 
+    z-index: 99; 
+    font-size: 24px; 
+    border: none; 
+    background-color: #e0e0e0; 
+    cursor: pointer; 
+    font-weight: bolder;
+    color: white;
+    padding: 10px 13px; 
+    border-radius: 100%; 
+    text-decoration: none; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); 
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+#goTopBtn:hover {
+    background-color: #aba9a9; 
+    transform: translateY(-2px);
+}
+
 
 /* Dark Mode */
 #theme-icon {
@@ -390,6 +414,12 @@ body.dark-mode .div-card{
     border-left: var(--dark-border-left);
 }
 
+body.dark-mode #goTopBtn {
+  background-color: #292929; 
+  color: #616161;
+}
 
-
+body.dark-mode #goTopBtn:hover {
+    background-color: #3d3d3d; 
+}
 /* ------------------------- */

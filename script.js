@@ -36,3 +36,34 @@ function openModal(id) {
       }
     });
   };
+
+
+// Get the button
+const goTopBtn = document.getElementById("goTopBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {
+    scrollFunction();
+};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        goTopBtn.style.display = "block"; // Show the button
+    } else {
+        goTopBtn.style.display = "none"; // Hide the button
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+goTopBtn.addEventListener("click", function(event) {
+    event.preventDefault(); // Prevent default anchor behavior (jumping directly)
+    scrollToTop();
+});
+
+function scrollToTop() {
+    // For a smooth scroll effect
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth" // This makes the scroll smooth
+    });
+}
